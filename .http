@@ -1,0 +1,40 @@
+GET http://localhost:3005/user 
+###
+GET http://localhost:3005/user/1/full-name
+###
+GET http://localhost:3005/user/1 
+###
+POST http://localhost:3005/user/3/task
+Content-Type: application/json
+
+{
+    "description" : "Mergi la piata"
+}
+###
+POST http://localhost:3005/user
+Content-Type: application/json
+
+{
+    "firstName" : "Cristian",
+    "lastName" : "Albu",
+    "email" : "cristianalbu@yahoo.com",
+    "password" : "123456"
+}
+###
+PUT http://localhost:3005/user
+Content-Type: application/json
+
+{
+    "id": 2,
+    "firstName" : "Cristian"
+}
+###
+
+DELETE http://localhost:3005/user
+Content-Type: application/json
+
+{
+    "id": 4
+}
+###
+
