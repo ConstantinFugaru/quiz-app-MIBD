@@ -1,1 +1,3 @@
-export interface QuizDeleteDto {}
+export interface QuizDeleteDto {
+    id : number;
+}

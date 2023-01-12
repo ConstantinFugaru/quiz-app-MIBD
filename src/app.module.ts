@@ -5,8 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TaskModule } from './task/task.module';
 import { QuizModule } from './quiz/quiz.module';
-import { AnswerModule } from './answear/answer.module';
-import { QuestionService } from './question/question.service';
+import { AnswerModule } from './answer/answer.module';
 import { QuestionModule } from './question/question.module';
 
 @Module({
@@ -24,6 +23,6 @@ import { QuestionModule } from './question/question.module';
     QuestionModule,
   ],
   controllers: [AppController],
-  providers: [AppService, QuestionService],
+  providers: [AppService],
 })
 export class AppModule {}

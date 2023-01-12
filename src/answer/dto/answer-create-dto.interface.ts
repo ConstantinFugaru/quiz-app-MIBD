@@ -1,1 +1,4 @@
-export interface AnswerCreateDto {}
+export interface AnswerCreateDto {
+    textAnswer: string;
+    isCorrect: boolean;
+}
