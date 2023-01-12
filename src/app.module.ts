@@ -5,7 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TaskModule } from './task/task.module';
 import { QuizModule } from './quiz/quiz.module';
-import { AnswearModule } from './answear/answear.module';
+import { AnswerModule } from './answear/answer.module';
 import { QuestionService } from './question/question.service';
 import { QuestionModule } from './question/question.module';
 
@@ -20,7 +20,7 @@ import { QuestionModule } from './question/question.module';
       synchronize: true
     }),
     QuizModule,
-    AnswearModule,
+    AnswerModule,
     QuestionModule,
   ],
   controllers: [AppController],
