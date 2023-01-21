@@ -37,4 +37,31 @@ Content-Type: application/json
     "id": 4
 }
 ###
+POST http://localhost:3005/quiz
+Content-Type: application/json
+
+{
+    "title" : "Limba si literatura romana 9-10",
+    "category" : "Romana",
+    "score" : 100,
+    "available" : true
+}
+###
+GET http://localhost:3005/quiz/1 
+###
+GET http://localhost:3005/quiz/allQ 
+###
+GET http://localhost:3005/quiz/allQWQ2 
+###
+GET http://localhost:3005/quiz/allQWQ 
+###
+
+POST http://localhost:3005/question/createQuestion 
+Content-Type: application/json
+
+{
+    "quizId": 3,
+    "textQuestion": "Cine este Alin?"
+}
+###
 
