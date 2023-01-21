@@ -1,1 +1,4 @@
-export interface QuestionCreateDto {}
+export interface QuestionCreateDto {
+    textQuestion : string;
+    quizId :number;
+}

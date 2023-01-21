@@ -13,9 +13,6 @@ export class QuestionEntity {
     @CreateDateColumn()
     createdAt: string;
 
-    @UpdateDateColumn()
-    updatedAt: string;
-
     @OneToMany(()=> AnswerEntity, (answer) => answer.question)
     answerList: AnswerEntity[];
 

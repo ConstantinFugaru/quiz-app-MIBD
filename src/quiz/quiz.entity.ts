@@ -1,5 +1,5 @@
 import QuestionEntity from "@src/answer/answer.entity";
-import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class QuizEntity {
@@ -9,20 +9,8 @@ export class QuizEntity {
     @Column()
     title: string;
 
-    @Column()
-    category: string;
-
-    @Column()
-    score: number;
-
-    @Column()
-    available: boolean;
-
     @CreateDateColumn()
     createdAt: string;
-
-    @UpdateDateColumn()
-    updatedAt: string;
 
     @OneToMany(()=> QuestionEntity, (question)=> question.quiz)
     questionList: QuestionEntity[];
